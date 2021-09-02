@@ -240,7 +240,7 @@ def run_conda_command() {
     env_name = "eman-deps-${STAGE_NAME}"
 
     sh "conda env remove      -n " + env_name
-    sh "conda create          -n " + env_name + " eman-deps=${STAGE_NAME} -c cryoem -c conda-forge -c defaults --yes"
+    sh "conda create          -n " + env_name + " eman-deps=${STAGE_NAME} -c cryoem -c conda-forge --yes"
     sh "conda list            -n " + env_name
     sh "conda list --explicit -n " + env_name
 }

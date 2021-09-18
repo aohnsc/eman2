@@ -6,6 +6,7 @@ find_package(Boost COMPONENTS python${boost_py_ver} numpy${boost_py_ver} REQUIRE
 
 message("Boost_LIBRARIES:   ${Boost_LIBRARIES}")
 message("Boost_INCLUDE_DIR: ${Boost_INCLUDE_DIR}")
+message("Boost_VERSION: ${Boost_VERSION}")
 
 #this definition is for boost.python > 1.35.0
 set_target_properties(Boost::python${boost_py_ver}

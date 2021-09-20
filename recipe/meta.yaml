@@ -20,6 +20,7 @@ requirements:
     
     run:
       - eman-deps         {{ environ.get('EMAN_DEPS_VERSION', '') }}
+      - openmpi 4.0.2
 
 test:
   source_files:

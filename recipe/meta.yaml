@@ -20,7 +20,6 @@ requirements:
     
     run:
       - eman-deps         {{ environ.get('EMAN_DEPS_VERSION', '') }}
-      - {{ compiler('cxx') }}
 
 test:
   source_files:

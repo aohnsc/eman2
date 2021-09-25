@@ -16,7 +16,12 @@ if [ -n "${CIRCLECI}" ];then
     conda activate eman
 fi
 
-python -m compileall -q -x .git -x sparx -x sphire .
+env
+printenv
+which python
+conda info
+conda info -e
+python -V
 
 if [ -n "$JENKINS_HOME" ];then
     export CPU_COUNT=4

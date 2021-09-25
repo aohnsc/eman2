@@ -226,12 +226,12 @@ def isSkipStage() {
     stages = [
         'build-local',
 //         'build-recipe',
-//         'package',
-//         'test-package',
-//         'deploy',
-//         'test-continuous'
+        'package',
+        'test-package',
+        'deploy',
+        'test-continuous'
     ]
-    return stages.contains(STAGE_NAME)
+    return stages.contains(STAGE_NAME) || AGENT_OS_NAME != "win"
 }
 
 pipeline {

@@ -19,6 +19,7 @@ fi
 env
 printenv
 which python
+which conda
 conda info
 conda info -e
 python -V
